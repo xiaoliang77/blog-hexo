@@ -1,0 +1,215 @@
+# Hexo Configuration
+## Docs: https://hexo.io/docs/configuration.html
+## Source: https://github.com/hexojs/hexo/
+
+# Site
+title: 小良、Blog
+subtitle:
+description: [小良,捷径,规则,脚本,解析,应用,教程,下载]
+keywords: [小良更新器,workflow,pin,jsbox,vip解析,教程,workflow规则,js脚本,捷径,捷径大全,捷径规则,小良,iPhone 8、小良,小良官网,小良网站]
+author: iPhone 8、小良
+language: zh-CN
+timezone:
+
+# URL
+## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
+url: https://87xl.cn/
+root: /
+permalink: :title.html
+permalink_defaults:
+
+# Directory
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: :lang
+skip_render: ##跳过指定渲染，忽略文章skip_render: "_posts/hello-world.md"
+  - 404.html
+
+# Writing
+new_post_name: :title.md # File name of new posts
+default_layout: post
+titlecase: false # Transform title into titlecase
+# external_link: true # Open external links in new tab
+filename_case: 0
+render_drafts: false
+post_asset_folder: false
+relative_link: false
+future: true
+highlight:
+  enable: true
+  line_number: true
+  auto_detect: false
+  tab_replace:
+  
+# Home page setting
+# path: Root path for your blogs index page. (default = '')
+# per_page: Posts displayed per page. (0 = disable pagination)
+# order_by: Posts order. (Order by date descending by default)
+index_generator:
+  path: ''
+  per_page: 10
+  order_by: -date
+  
+# Category & Tag
+default_category: uncategorized
+category_map:
+tag_map:
+
+# Date / Time format
+## Hexo uses Moment.js to parse and display date
+## You can customize the date format as defined in
+## http://momentjs.com/docs/#/displaying/format/
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+
+# Pagination
+## Set per_page to 0 to disable pagination
+per_page: 10
+pagination_dir: page
+
+# Extensions
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
+theme: butterfly
+
+# Deployment
+## Docs: https://hexo.io/docs/deployment.html
+deploy:
+  type: git
+  repo: git@yoocl.github.com:yoocl/yoocl.github.io.git
+  branch: master
+# message: 
+
+# 导航栏，建议以/结尾，少一次301重定向。
+nav_menu:
+  - name: home
+    icon: fas fa-home
+    url: https://ae85.cn/
+  - name: blogs
+    icon: fas fa-rss
+    url: /
+  - name: archives
+    icon: fas fa-archive
+    url: archives/
+#  - name: friends
+#    icon: fas fa-users
+#    url: friends/
+
+# 页脚社交信息
+social:
+  - icon: fas fa-envelope
+    url: mailto:84088289@qq.com
+  - icon: fab fa-twitter
+    url: https://twitter.com/yoocl_77
+  - icon: fab fa-weibo
+    url: https://weibo.com/u/6216079977
+  - icon: fab fa-weixin
+    url: http://ae85.cn/lxfs.html
+  - icon: fas fa-music
+    url: https://music.163.com/#/discover/toplist?id=2250011882
+
+#侧边
+widgets:
+  - widget: author
+    avatar: https://github.com/yoocl/material/raw/master/toux.jpg
+#    jinrishici: true
+    title: iPhone 8、小良
+    body: Workflow(捷径)规则创作者 jsbox/pin 脚本 开发研究 Vip视频解析代码创始家 资源分享 软件破解 ios玩机...
+    social: true
+  - widget: plain
+    icon: fas fa-bullhorn
+    title: 温馨提示：
+    body: '小良博客上线了 [Blog](https://87xl.cn/) 欢迎广大朋友收藏，今后这里会发布一些微信公众号和微博不好发布的内容'
+    more:
+      icon: fas fa-question-circle
+      url: https://ae85.cn/lxfs.html
+  - widget: category
+  - widget: tagcloud
+  - widget: list
+    icon: fas fa-medal
+    title: 精选项目
+    more:
+      icon: fas fa-arrow-right
+      url: https://ae85.cn/
+    rows:
+      - name: 捷径 - workflow 
+        desc: iOS规则
+        icon: fas fa-cube
+        url: https://ae85.cn/gz.html
+      - name: JSBox - Pin
+        desc: js脚本
+        icon: fas fa-cube
+        url: https://ae85.cn/jb.html
+      - name: HeartMate
+        desc: iOS应用程序
+        icon: fas fa-heartbeat
+        url: https://ae85.cn/yy.html
+      - name: 视频教程
+        desc: 操作演示
+        icon: fas fa-cube
+        url: https://ae85.cn/qt.html
+#  - widget: list
+#    icon: fas fa-link
+#    title: 特别链接
+#    rows:
+#      - name: 关于我 / 留言板
+#        icon: fas fa-comment-dots
+#        url: https://xaoxuu.com/about/
+  - widget: music
+    icon: fas fa-compact-disc
+    title: "音乐热歌榜"
+    more:
+      icon: far fa-heart
+      url: https://music.163.com/#/discover/toplist?id=3778678  #https://music.163.com/#/user/home?id=63035382
+    server: netease   # netease（网易云音乐）tencent（QQ音乐） xiami（虾米） kugou（酷狗）
+    type: playlist    # song （单曲） album （专辑） playlist （歌单） search （搜索）
+    id: 3778678    # 歌曲/专辑/歌单 ID
+  - widget: toc
+
+#分享
+share:
+  - id: twitter
+    name: Twitter
+    img: https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/twitter.png
+  - id: qq
+    name: QQ好友
+    img: https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/qq.png
+  - id: qzone
+    name: QQ空间
+    img: https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/qzone.png
+  - id: qrcode
+    name: 微信
+    img: https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/wechat.png
+  - id: weibo
+    name: 微博
+    img: https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/weibo.png
+  - id: youdao
+    name: 有道云笔记
+    img: https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/youdao.png
+  - id: qrcode
+    name: QRcode
+    img: https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/qrcode.png
+
+
+#baidu统计
+baidu_analytics_key: e414d8fe4640cc2e0e954590a5393095
+
+# 来必力评论
+#livere_uid: MTAyMC80MjI5MS8xODgzOA==
+
+# valine
+valine:
+  enable: true # 如果你想用Valine评论系统，请设置enable为true
+  app_id: djUY37EKmRlv6J4nnE136qsr-gzGzoHsz # 必填
+  app_key: AcpvdsPPOiCXUsDEbNiPygWl # 必填
+  guest_info: nick,mail #valine comment header info
+  placeholder: 快来评论吧~ # valine comment input placeholder(like: Please leave your footprints )
+  avatar: mp # gravatar style https://valine.js.org/avatar
+  pageSize: 10 # comment list page size
+  verify: false # valine verify code (true/false)
+  notify: false # valine mail notify (true/false)
+  lang: zh-cn
