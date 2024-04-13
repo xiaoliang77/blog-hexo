@@ -19,3 +19,4 @@ date: 2018-02-19
 |vscode-mindmap | VSCode Mindmap 插件/思维脑图/本地创建.km文件即可生成思维脑图 |
 |CodeGeeX|AI代码生成工具|
 |Markdown Preview Enhanced|Markdown预览插件|
+|Workspace Sidebar|工作区侧边栏-配置：扩展设置-》设置工作区文件读取目录|
